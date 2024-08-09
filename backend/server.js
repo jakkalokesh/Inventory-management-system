@@ -10,10 +10,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const pool = new Pool({
-  user: "Lokesh",
+  user: "username",
   host: "localhost",
   database: "store",
-  password: "l0kesh",
+  password: "password",
   port: 5432,
 });
 

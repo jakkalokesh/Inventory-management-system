@@ -7,5 +7,5 @@ Developed a full-stack web application for inventory management, enabling produc
 - React
 - Node.js
 - Express
-- Postgress
+- PostgreSQL
 - CSS

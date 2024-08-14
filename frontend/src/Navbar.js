@@ -6,6 +6,9 @@ import "./App.css";
 const Navbar = ({ role, token, handleLogout }) => {
   return (
     <nav className="navbar">
+      <div className="navbar-left">
+        <span className="navbar-brand">SmartInventory</span>
+      </div>
       <ul>
         {!token ? (
           <>

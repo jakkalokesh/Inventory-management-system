@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f0f2f5;
+  background-color: #cee1fa;
 }
 
 .container,
@@ -53,32 +53,55 @@ button:hover {
   background-color: #0056b3;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  background-color: #7ecff7;
-  margin: 0;
+/* Navbar Styles */
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 60px;
-}
-
-nav li {
-  margin: 0 20px;
-}
-
-nav a {
-  text-decoration: none;
+  background-color: #7ecff7;
+  padding: 15px 20px;
   color: white;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 2;
+}
+
+.navbar-brand {
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(103, 27, 175);
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a,
+.navbar ul li button {
+  color: white;
+  text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
+.navbar ul li a.active {
   color: rgb(103, 27, 175);
 }
 
@@ -100,7 +123,9 @@ nav a.active {
 .buy-container {
   display: flex;
   justify-content: space-between;
-  margin: 50px auto;
+  margin: 30px auto;
+  max-width: 90%;
+  height: 600px !important;
 }
 
 .products-container {

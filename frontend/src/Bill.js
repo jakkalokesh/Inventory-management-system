@@ -35,15 +35,15 @@ const Bill = () => {
             <tr key={index}>
               <td>{item.item_name}</td>
               <td>{item.quantity}</td>
-              <td>${item.item_price.toFixed(2)}</td>
-              <td>${(item.item_price * item.quantity).toFixed(2)}</td>
+              <td>₹{item.item_price.toFixed(2)}</td>
+              <td>₹{(item.item_price * item.quantity).toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
         <tfoot>
           <tr>
             <td colSpan="3"><strong>Total Amount</strong></td>
-            <td><strong>${totalAmount.toFixed(2)}</strong></td>
+            <td><strong>₹{totalAmount.toFixed(2)}</strong></td>
           </tr>
         </tfoot>
       </table>

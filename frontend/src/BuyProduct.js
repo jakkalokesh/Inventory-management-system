@@ -56,7 +56,7 @@ const BuyProduct = ({ token }) => {
     if (isNaN(qty) || qty <= 0) {
       setErrorMessages((prevErrors) => ({
         ...prevErrors,
-        [product.item_id]: `Please enter a valid quantity for ${product.item_name}`,
+        [product.item_id]: `Please enter a valid quantity for Rs{product.item_name}`,
       }));
     } else if (totalQty > product.item_quantity) {
       setErrorMessages((prevErrors) => ({
@@ -180,7 +180,7 @@ const BuyProduct = ({ token }) => {
                 <strong>Product Name:</strong> {product.item_name}
               </p>
               <p>
-                <strong>Price:</strong> ${product.item_price}
+                <strong>Price:</strong> ₹{product.item_price}
               </p>
               <p>
                 <strong>Available Quantity:</strong> {product.item_quantity}

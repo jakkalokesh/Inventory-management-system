@@ -124,7 +124,7 @@ const ViewProducts = ({ token }) => {
                 <td>{product.item_id}</td>
                 <td>{product.item_name}</td>
                 <td>{product.item_quantity}</td>
-                <td>${product.item_price.toFixed(2)}</td>
+                <td>₹{product.item_price.toFixed(2)}</td>
                 <td>
                   <input
                     type="number"
